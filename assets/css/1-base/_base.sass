@@ -1,0 +1,129 @@
+$primary-color: #F6c
+$text-color: #2e2d33
+$accent-color: #BD5248
+$bg-color: #F6F6F8
+$link-color: $accent-color
+$selection-color: #FFF498
+
+
+/*	Typography presets
+  ------------------------------------	*/
+
+.gigantic, .huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6
+  color: #BD5248
+  font-weight: bold
+
+.gigantic
+  font-size: 110px
+  line-height: 1.09
+  letter-spacing: -2px
+
+.huge, h1
+  font-size: 68px
+  line-height: 1.05
+  letter-spacing: -1px
+
+.large, h2
+  font-size: 42px
+  line-height: 1.14
+
+.bigger, h3
+  font-size: 26px
+  line-height: 1.38
+
+.big, h4
+  font-size: 22px
+  line-height: 1.38
+
+.small, small
+  font-size: 10px
+  line-height: 1.2
+
+
+
+p
+  margin: 0 0 20px 0
+
+em
+  font-style: italic
+
+strong
+  font-weight: bold
+
+hr
+  border: solid #ddd
+  border-width: 1px 0 0
+  clear: both
+  margin: 10px 0 30px
+  height: 0
+
+
+
+/* Links
+  ------------------------------------	*/
+a
+  color: #BD5248
+  text-decoration: none
+  outline: 0
+
+a:hover, a:focus
+  color: lighten(#BD5248, 20%)
+
+
+
+/* Selection colors (easy to forget)
+  ------------------------------------	*/
+
+::selection
+  background: #F6F6F8
+
+::-moz-selection
+  background: #F6F6F8
+
+img::selection
+  background: transparent
+
+img::-moz-selection
+  background: transparent
+
+body
+  -webkit-tap-highlight-color: #F6F6F8
+
+
+
+/* Basic Styles
+  ------------------------------------	*/
+body
+  background: #F6F6F8
+  font-size: 14px
+  line-height: 1.6
+  font-family: 'Open Sans' sans-serif
+  color: #2e2d33
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+
+svg
+  +size(100%)
+
+h3
+  @extend %small-bold
+  color: #BD5248-light
+  text-align: center
+  padding: 100px 0 30px
+
+fieldset
+  padding: 0
+  margin: 0
+  border: none
+
+@media screen and (max-width: 480px)
+  h3
+    padding: 50px 0 50px
+
+section:nth-child(odd)
+  background: #F6F6F8
+  padding-bottom: 100px
+
+  h3
+    color: (#BD5248-light, 10%)
